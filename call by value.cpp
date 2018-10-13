@@ -1,20 +1,19 @@
 #include<stdio.h>
 #include<conio.h>
-int swapv ( int , int);
- int main( )
+void swap(int ,int );
+main()
 {
-int a = 10, b = 20 ;
-swapv ( a, b ) ;
-printf( "\n a = %d \n b=%d", a, b ) ;
-getch();
-return 0;
+	int x,y;
+
+	x=8;
+	y=9;
+	swap(x,y);
 }
-int swapv ( int x, int y )
+void swap(int a,int b)
 {
-int t ;
-t = x ;
-x = y ;
-y = t ;
-printf( "\n x = %d \n y =%d", x, y ) ;
-return 0;
+	int c;
+	c=a;
+	a=b;
+	b=c;
+	printf("%d%d",a,b);
 }
